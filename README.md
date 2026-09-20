@@ -36,11 +36,9 @@ cloud_computing/
 
 ## 배포 주소
 
-제출 전에 아래 세 칸을 채운 뒤 `제출주소.md`에도 그대로 적습니다.
-
-- GitHub 저장소: `(저장소를 만든 뒤 주소를 넣습니다)`
-- Vercel 페이지: `(예: https://xxxx.vercel.app)`
-- Render Swagger UI: `(예: https://xxxx.onrender.com/docs)`
+- GitHub 저장소: https://github.com/globalfinance1703-cpu/cloud-computing-20259307
+- Vercel 페이지: https://cloud-computing-20259307.vercel.app
+- Render Swagger UI: `(Render 로그인 후 배포하면 여기에 주소를 넣습니다)`
 
 ## 이름과 소개
 
