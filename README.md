@@ -38,7 +38,7 @@ cloud_computing/
 
 - GitHub 저장소: https://github.com/globalfinance1703-cpu/cloud-computing-20259307
 - Vercel 페이지: https://cloud-computing-20259307.vercel.app
-- Render Swagger UI: `(Render 로그인 후 배포하면 여기에 주소를 넣습니다)`
+- Render Swagger UI: https://cloud-computing-api-20259307.onrender.com/docs
 
 ## 이름과 소개
 
