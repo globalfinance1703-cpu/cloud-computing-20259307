@@ -1,0 +1,339 @@
+:root {
+  --ink: #1a2230;
+  --ink-soft: #43506a;
+  --paper: #f4f1ea;
+  --card: #fffdf8;
+  --line: #dfd9cd;
+  --accent: #2f6f6a;
+  --accent-2: #b4532a;
+  --shadow: 0 12px 32px rgba(26, 34, 48, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, #efe7d8, transparent 28%),
+    var(--paper);
+  font-family: "Noto Sans KR", Pretendard, "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  line-height: 1.65;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+a {
+  color: var(--accent);
+}
+
+.shell {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 28px 20px 48px;
+}
+
+.topbar,
+.foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.brand p,
+.role,
+.tagline,
+.mono,
+.empty,
+.foot {
+  color: var(--ink-soft);
+}
+
+.brand-mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--accent);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.brand strong,
+h1,
+h2,
+h3 {
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+
+.brand p,
+.foot {
+  margin: 0;
+  font-size: 13px;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-btn,
+.primary,
+.ghost,
+.composer button,
+.memo-list button {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 999px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.nav-btn.active,
+.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.ghost {
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.page {
+  margin-top: 28px;
+  display: grid;
+  gap: 18px;
+}
+
+.hero {
+  padding: 8px 4px 4px;
+}
+
+.hero.compact h1 {
+  font-size: 34px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent-2);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(36px, 6vw, 56px);
+}
+
+.role {
+  margin: 8px 0 0;
+  font-weight: 600;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin: 16px 0 0;
+}
+
+.meta div {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 12px;
+}
+
+.meta dt {
+  margin: 0;
+  color: var(--accent-2);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.meta dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.tagline {
+  margin: 8px 0 0;
+  max-width: 640px;
+  font-size: 18px;
+}
+
+.hero-actions,
+.composer {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card,
+.week {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 20px 22px;
+  box-shadow: var(--shadow);
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.badge {
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 4px 10px;
+  background: #eeeae1;
+}
+
+.badge.ok {
+  background: #e7f3f0;
+  color: var(--accent);
+}
+
+.badge.fallback,
+.badge.loading {
+  background: #fdf3e7;
+  color: var(--accent-2);
+}
+
+.chips,
+.layers,
+.memo-list {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chips li {
+  background: #eef4f3;
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.layers {
+  display: grid;
+  gap: 12px;
+}
+
+.layers li {
+  display: grid;
+}
+
+.layers span {
+  color: var(--ink-soft);
+}
+
+.mono,
+code {
+  font-family: Consolas, "JetBrains Mono", monospace;
+  font-size: 13px;
+}
+
+.composer input {
+  flex: 1;
+  min-width: 220px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: #fff;
+}
+
+.memo-list {
+  display: grid;
+  gap: 10px;
+}
+
+.memo-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.memo-list button {
+  color: var(--accent-2);
+}
+
+.foot {
+  margin-top: 28px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.linkish {
+  border: 0;
+  background: none;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 0;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  .card,
+  .week {
+    padding: 16px;
+  }
+}
